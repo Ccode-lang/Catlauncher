@@ -57,7 +57,7 @@ ipcMain.on('launch', (event, arg) => {
         clientPackage: null,
         // Pulled from the Minecraft Launcher core docs , this function is the star of the show
         authorization: msmc.getMCLC().getAuth(result),
-        root: path.join(userHomeDir, ".hglauncher"),//"./minecraft",
+        root: path.join(userHomeDir, ".catmc"),//"./minecraft",
         version: {
           number: "1.19.2",
           type: "release"
@@ -65,10 +65,10 @@ ipcMain.on('launch', (event, arg) => {
         memory: {
           max: "6G",
           min: "4G"
-        },
-        server: {
-          host: "51.81.169.30"
-        }
+        }//,
+        //server: {
+          //host: "51.81.169.30"
+        //}
       }
       console.log("Starting!")
       launcher.launch(opts);
