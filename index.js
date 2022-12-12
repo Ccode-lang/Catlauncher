@@ -58,10 +58,10 @@ ipcMain.on('launch', (event, arg) => {
         // Pulled from the Minecraft Launcher core docs , this function is the star of the show
         authorization: msmc.getMCLC().getAuth(result),
         root: path.join(userHomeDir, ".catmc"),//"./minecraft",
-        version: {
-          number: "1.19.2",
-          type: "release"
-        },
+        //version: {
+        //  number: "1.19.2",
+        //  type: "release"
+        //},
         memory: {
           max: "6G",
           min: "4G"
